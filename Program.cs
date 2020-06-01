@@ -1,0 +1,18 @@
+﻿using System;
+
+namespace pooEncapsulamento
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cartao card = new Cartao();
+            MasterCard master = new MasterCard();
+            card.aprovarCompra();
+            master.parcelas = 3;
+            master.ComprarComDescontoMasterCard(50f);
+            
+
+        }
+    }
+}
